@@ -33,7 +33,7 @@ el mismo patrón — no se auditó el resto del código en busca de instancias s
 
 ## Pull Request
 
-`[COMPLETAR — link al Draft PR una vez abierto hacia gabrielhuav/PolitecnicoOpenWorld:main]`
+[gabrielhuav/PolitecnicoOpenWorld#165](https://github.com/gabrielhuav/PolitecnicoOpenWorld/pull/165)
 
 ## SHAs
 
