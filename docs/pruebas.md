@@ -90,8 +90,9 @@ introducido por este cambio.
   correctamente sin escribir el acento; tocar el resultado teletransportó al personaje. El mismo
   comportamiento se repitió en la sección de Metrobús.
 - **Estado:** aprobado.
-- **Evidencia:** captura del buscador de Metro mostrando "Pantitlán" al buscar "pantitlan"
-  (tomada en el emulador durante la ejecución).
+- **Evidencia:**
+  Antes (SHA base `7ed32539...`): ![antes](https://github.com/user-attachments/assets/dbe95225-1096-4d1a-9333-4caea52d8bed)
+  Después (SHA probado `1b92fed6...`): ![despues](https://github.com/user-attachments/assets/64685653-886d-4bc3-a1f7-91654bc9cb71)
 - **Defecto asociado / decisión:** ninguno.
 
 ### LIM-02 — Límite: búsqueda vacía, sin coincidencias, y la ñ no se confunde con "n"
