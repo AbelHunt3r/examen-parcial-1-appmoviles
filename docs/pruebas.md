@@ -228,6 +228,11 @@ aceptación se cumplieron en todos los escenarios probados. Limitaciones documen
 - `./gradlew` no funciona de inmediato en una instalación local limpia por el
   `gradle-wrapper.jar` gitignorado (ver nota de entorno); no es un defecto de la app, es
   preexistente en el repositorio y documentado arriba con su solución local.
+- El PR Quality Gate de CI no ha corrido en GitHub Actions todavía: GitHub bloquea por seguridad
+  la ejecución automática de workflows en PRs desde un fork externo hasta que un mantenedor del
+  repo original lo apruebe manualmente ("This workflow is awaiting approval from a maintainer in
+  #165"). Bloqueo externo, no relacionado con este cambio; la validación equivalente ya se corrió
+  en local con éxito (ver REG-03).
 
 ## Cierre del QA
 

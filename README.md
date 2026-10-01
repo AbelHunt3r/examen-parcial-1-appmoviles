@@ -54,9 +54,20 @@ enlazarlas aquí y desde cada caso de docs/pruebas.md]`.
 
 ## Checks de CI (PR Quality Gate)
 
-`[COMPLETAR una vez abierto el PR — estado de cada check (build Android debug, unit tests
-app/shared, chequeo de nombres de test KMP, detekt), SHA evaluado, y link a la pestaña Checks del
-PR]`.
+El PR Quality Gate (`unit-tests` + `detekt`, definidos en `.github/workflows/pr-quality-gate.yml`)
+**no ha corrido todavía**. No es un fallo ni un problema introducido por este cambio: GitHub
+bloquea por seguridad la ejecución automática de workflows en Pull Requests abiertos desde un
+fork externo (práctica estándar, para que un colaborador externo no pueda ejecutar código
+arbitrario con los secretos del repositorio) hasta que un mantenedor del repositorio original
+(`gabrielhuav`) lo apruebe manualmente desde la pestaña Actions. Esto se confirmó directamente en
+la corrida: *"This workflow is awaiting approval from a maintainer in #165"*.
+
+Mientras tanto, la validación local equivalente ya se corrió con éxito (ver REG-03 en
+`docs/pruebas.md`): `gradle :app:assembleDebug :app:testDebugUnitTest :shared:testAndroidHostTest
+--stacktrace` → `BUILD SUCCESSFUL`, 79 tareas, incluidos los 7 nuevos `StationSearchTest`. Esta
+sección se actualizará con los resultados reales (build Android debug, tests app/shared, chequeo
+de nombres KMP, detekt) en cuanto el profesor apruebe la corrida y los checks aparezcan en la
+pestaña **Checks** del PR.
 
 ## Revisión entre pares
 
