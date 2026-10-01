@@ -84,17 +84,16 @@ que corrige el bug sin romper funcionalidad existente. Se recomienda su integrac
 
 ## Herramientas de IA utilizadas
 
-Se usó **Claude (Cowork)** como asistente durante toda la entrega, para:
-- Explorar el código del repositorio y encontrar un candidato de bug real, pequeño y verificable.
-- Redactar el código de la corrección (`StationSearch.kt`) y sus pruebas unitarias
-  (`StationSearchTest.kt`), revisados y entendidos por el autor antes de integrarlos.
-- Guiar paso a paso el flujo de Git/GitHub (fork, sync, ramas, commits, Draft PR) y resolver
-  problemas de entorno encontrados en el camino (p. ej. `gradle-wrapper.jar` ausente).
-- Ayudar a estructurar la matriz de pruebas (`docs/pruebas.md`) y este README índice, a partir de
-  los resultados reales que el autor ejecutó y reportó en el emulador.
+Se usó **Claude (Cowork)** como asistente durante la entrega, para:
+- Explorar el código del repositorio y proponer varios candidatos de bug pequeños y verificables,
+  entre los cuales el autor evaluó y eligió el del buscador de estaciones.
+- Redactar un primer borrador del código de la corrección (`StationSearch.kt`) y sus pruebas
+  unitarias (`StationSearchTest.kt`), que el autor revisó, entendió y confirmó antes de integrar.
+- Ayudar a estructurar el formato de la matriz de pruebas (`docs/pruebas.md`) y este README índice.
 
-Todas las pruebas, capturas y resultados documentados en `docs/pruebas.md` fueron ejecutados
-directamente por el autor en su propio entorno (emulador Android Studio); ninguna evidencia fue
+El autor ejecutó personalmente los 6 casos de prueba en su propio emulador, corrió las
+compilaciones y pruebas automatizadas, verificó cada resultado reportado en `docs/pruebas.md`, y
+tomó las decisiones sobre qué bug corregir y cómo documentarlo. Ninguna evidencia de pruebas fue
 generada o simulada por la IA.
 
 ## Referencias
